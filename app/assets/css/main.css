@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Prompt', 'Sarabun', system-ui, sans-serif;
+
+  /* Smart ALRO Phayao palette */
+  --color-pine-950: #122b21;
+  --color-pine-900: #1f4d3a;
+  --color-pine-800: #265c46;
+  --color-pine-700: #2f6f55;
+  --color-moss-600: #5d7d61;
+  --color-moss-500: #6f8f72;
+  --color-moss-200: #c3d4c4;
+  --color-sage-100: #e8f0e8;
+  --color-sage-50: #f1f6f1;
+  --color-cream: #f5f3ea;
+  --color-ink: #1d2520;
+}
+
+body {
+  font-family: 'Prompt', 'Sarabun', system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+input,
+select {
+  min-width: 0;
+}
+
+/* Subtle professional entrance animation */
+@keyframes alro-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fade-up {
+  animation: alro-fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Slow cinematic zoom for hero imagery */
+@keyframes alro-hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+
+.anim-hero-zoom {
+  animation: alro-hero-zoom 22s ease-in-out infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade-up,
+  .anim-hero-zoom {
+    animation: none;
+  }
+}

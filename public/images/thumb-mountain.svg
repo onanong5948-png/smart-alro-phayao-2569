@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ภาพทุ่งนาและภูเขาตัวอย่าง">
+  <rect width="800" height="500" fill="#F5F3EA"/>
+  <circle cx="400" cy="170" r="70" fill="#6F8F72" opacity="0.35"/>
+  <circle cx="400" cy="170" r="48" fill="#6F8F72" opacity="0.6"/>
+  <path d="M0 300 L150 180 L280 280 L430 160 L580 290 L700 210 L800 280 L800 500 L0 500 Z" fill="#1F4D3A" opacity="0.8"/>
+  <path d="M0 360 Q400 330 800 360 L800 500 L0 500 Z" fill="#6F8F72"/>
+  <g stroke="#F5F3EA" stroke-width="4" opacity="0.5">
+    <path d="M100 380 L80 500 M250 375 L240 500 M400 375 L400 500 M550 375 L560 500 M700 378 L720 500"/>
+  </g>
+</svg>

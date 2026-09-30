@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ภาพทุ่งนาและภูเขาจังหวัดพะเยา (ภาพตัวอย่าง)">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F3EA"/>
+      <stop offset="0.55" stop-color="#E8F0E8"/>
+      <stop offset="1" stop-color="#C3D4C4"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9DBFA2"/>
+      <stop offset="1" stop-color="#6F8F72"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6F8F72"/>
+      <stop offset="1" stop-color="#1F4D3A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+
+  <!-- sun -->
+  <circle cx="1240" cy="180" r="90" fill="#F5F3EA" opacity="0.9"/>
+  <circle cx="1240" cy="180" r="120" fill="#F5F3EA" opacity="0.35"/>
+
+  <!-- birds -->
+  <g stroke="#1F4D3A" stroke-width="5" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M420 150 q18 -16 36 0 q18 -16 36 0"/>
+    <path d="M520 200 q14 -12 28 0 q14 -12 28 0"/>
+    <path d="M350 230 q12 -10 24 0 q12 -10 24 0"/>
+  </g>
+
+  <!-- far mountains -->
+  <path d="M0 470 L220 260 L360 380 L520 230 L700 400 L880 270 L1060 420 L1240 300 L1420 430 L1600 330 L1600 560 L0 560 Z" fill="#6F8F72" opacity="0.55"/>
+  <!-- near mountains -->
+  <path d="M0 540 L180 380 L340 500 L560 350 L760 520 L980 390 L1180 530 L1380 420 L1600 520 L1600 640 L0 640 Z" fill="#1F4D3A" opacity="0.75"/>
+
+  <!-- Kwan Phayao lake band -->
+  <rect x="0" y="620" width="1600" height="90" fill="url(#lake)"/>
+  <g fill="#F5F3EA" opacity="0.5">
+    <ellipse cx="300" cy="655" rx="120" ry="8"/>
+    <ellipse cx="800" cy="675" rx="180" ry="9"/>
+    <ellipse cx="1300" cy="660" rx="140" ry="8"/>
+  </g>
+
+  <!-- rice terraces foreground -->
+  <path d="M0 710 Q400 670 800 710 T1600 710 L1600 900 L0 900 Z" fill="url(#field)"/>
+  <g stroke="#E8F0E8" stroke-width="4" fill="none" opacity="0.6">
+    <path d="M0 750 Q400 715 800 750 T1600 750"/>
+    <path d="M0 800 Q400 765 800 800 T1600 800"/>
+    <path d="M0 855 Q400 820 800 855 T1600 855"/>
+  </g>
+  <!-- rice rows -->
+  <g stroke="#F5F3EA" stroke-width="3" opacity="0.35">
+    <path d="M120 730 L90 900 M300 725 L280 900 M480 725 L470 900 M660 728 L660 900 M840 730 L850 900 M1020 730 L1040 900 M1200 728 L1230 900 M1380 725 L1420 900"/>
+  </g>
+
+  <!-- farmer hut -->
+  <g>
+    <rect x="1180" y="640" width="90" height="60" rx="4" fill="#1F4D3A"/>
+    <path d="M1165 642 L1225 600 L1285 642 Z" fill="#122B21"/>
+  </g>
+</svg>
