@@ -1,8 +1,8 @@
 <template>
   <div class="mx-auto max-w-6xl px-4 py-10">
-    <p class="text-xs font-bold uppercase tracking-widest text-amber-600">Smart Service</p>
-    <h1 class="mt-1 text-2xl font-bold text-slate-900 sm:text-3xl">เลือกประเภทปัญหาหรือบริการ</h1>
-    <p class="mt-1 text-sm text-slate-500">แตะการ์ดหมวดที่ตรงกับความต้องการ เพื่อดูขั้นตอน เอกสาร และแบบฟอร์ม</p>
+    <p class="text-xs font-bold uppercase tracking-widest text-moss-500">Smart Service</p>
+    <h1 class="mt-1 text-2xl font-bold text-ink sm:text-3xl">เลือกประเภทปัญหาหรือบริการ</h1>
+    <p class="mt-1 text-sm text-mist">แตะการ์ดหมวดที่ตรงกับความต้องการ เพื่อดูขั้นตอน เอกสาร และแบบฟอร์ม</p>
 
     <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       <CategoryCard v-for="c in categories" :key="c.id" :category="c" />

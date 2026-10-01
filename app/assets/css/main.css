@@ -3,23 +3,30 @@
 @theme {
   --font-sans: 'Prompt', 'Sarabun', system-ui, sans-serif;
 
-  /* Smart ALRO Phayao palette */
-  --color-pine-950: #122b21;
-  --color-pine-900: #1f4d3a;
-  --color-pine-800: #265c46;
-  --color-pine-700: #2f6f55;
+  /* Smart ALRO Phayao — ระบบสีหน่วยงานราชการดิจิทัล */
+  --color-pine-950: #173d2e;
+  --color-pine-900: #245a43;
+  --color-pine-800: #1d4a37;
+  --color-pine-700: #2f6b50;
   --color-moss-600: #5d7d61;
   --color-moss-500: #6f8f72;
   --color-moss-200: #c3d4c4;
-  --color-sage-100: #e8f0e8;
-  --color-sage-50: #f1f6f1;
+  --color-sage-100: #eaf4ee;
+  --color-sage-50: #f4f8f5;
   --color-cream: #f5f3ea;
-  --color-ink: #1d2520;
+  --color-gold-400: #d8b45a;
+  --color-gold-100: #f5ebd3;
+  --color-ink: #1f2d27;
+  --color-mist: #66736d;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Prompt', 'Sarabun', system-ui, sans-serif;
-  background: var(--color-cream);
+  background: var(--color-sage-50);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
 }
@@ -32,6 +39,22 @@ body {
 input,
 select {
   min-width: 0;
+}
+
+/* โลโก้ ส.ป.ก. ใน Header — แสดงเต็มรูป ไม่ครอบกรอบ ไม่บิดเบี้ยว */
+.alro-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .alro-logo {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 /* Subtle professional entrance animation */
@@ -65,6 +88,9 @@ select {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .anim-fade-up,
   .anim-hero-zoom {
     animation: none;

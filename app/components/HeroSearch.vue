@@ -1,6 +1,6 @@
 <template>
   <form
-    class="mx-auto flex max-w-2xl flex-col gap-2 rounded-[28px] bg-white p-2.5 shadow-2xl shadow-pine-950/30 sm:flex-row sm:items-center sm:rounded-full sm:pl-7"
+    class="mx-auto flex w-full max-w-[640px] flex-col gap-2 rounded-[24px] bg-white p-2.5 shadow-lg shadow-pine-950/10 ring-1 ring-pine-950/10 sm:flex-row sm:items-center sm:rounded-[28px] sm:pl-7"
     @submit.prevent="go"
   >
     <label for="hero-search" class="sr-only">คุณกำลังมองหาบริการอะไร?</label>

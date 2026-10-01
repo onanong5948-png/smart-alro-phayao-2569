@@ -3,9 +3,9 @@
     <li
       v-for="doc in documents"
       :key="doc"
-      class="flex items-center gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-slate-700"
+      class="flex items-center gap-3 rounded-xl border border-pine-950/10 bg-white px-4 py-3 text-sm text-ink/80"
     >
-      <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-400 text-sm font-bold text-amber-950">✓</span>
+      <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-pine-900 text-sm font-bold text-white">✓</span>
       {{ doc }}
     </li>
   </ul>

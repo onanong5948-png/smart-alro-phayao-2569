@@ -152,7 +152,7 @@ export const services: Service[] = [
     shortDesc: 'ขอออกหนังสืออนุญาตให้เข้าทำประโยชน์ในเขตปฏิรูปที่ดิน',
     icon: '📄',
     categoryId: 'land-service',
-    image: '/images/thumb-terraces.svg',
+    image: '/images/service-1.jpg',
     popular: true,
     steps: ['ยื่นคำขอที่ ส.ป.ก. พะเยา', 'ตรวจสอบคุณสมบัติ', 'รังวัดและตรวจสอบพื้นที่', 'ออกหนังสือ ส.ป.ก. 4-01'],
     documents: ['บัตรประชาชน', 'ทะเบียนบ้าน', 'หลักฐานการทำกิน (ถ้ามี)']
@@ -163,7 +163,7 @@ export const services: Service[] = [
     shortDesc: 'ขอรับโอนสิทธิการเข้าทำประโยชน์เมื่อทายาทรับช่วงต่อ',
     icon: '👨‍👩‍👧',
     categoryId: 'transfer-rights',
-    image: '/images/thumb-lake.svg',
+    image: '/images/service-2.jpg',
     popular: true,
     steps: ['ยื่นคำขอรับมรดกสิทธิ', 'ตรวจสอบทายาท', 'พิจารณาอนุมัติ', 'ออกหนังสือแทนฉบับเดิม'],
     documents: ['บัตรประชาชนทายาท', 'ทะเบียนบ้าน', 'ใบมรณบัตร', 'ส.ป.ก. 4-01 ฉบับเดิม']
@@ -203,7 +203,7 @@ export const services: Service[] = [
     shortDesc: 'สมัครเข้าร่วมโครงการพัฒนาและส่งเสริมอาชีพเกษตรกร',
     icon: '🌾',
     categoryId: 'others',
-    image: '/images/thumb-mountain.svg',
+    image: '/images/service-3.jpg',
     popular: true,
     steps: ['สมัครเข้าร่วมโครงการ', 'คัดเลือก', 'อบรม/รับปัจจัยการผลิต', 'ติดตามผล'],
     documents: ['บัตรประชาชน', 'ทะเบียนบ้าน', 'ส.ป.ก. 4-01 (ถ้ามี)']

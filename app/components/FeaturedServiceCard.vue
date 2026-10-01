@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="`/services/${service.id}`"
-    class="group overflow-hidden rounded-[28px] border border-pine-900/10 bg-white shadow-sm transition duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-pine-900/10"
+    class="group overflow-hidden rounded-[20px] border border-pine-950/10 bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-pine-900/10"
   >
     <div class="relative aspect-[16/10] overflow-hidden bg-sage-100">
       <img
@@ -14,8 +14,8 @@
       <div v-else class="flex h-full w-full items-center justify-center text-6xl" aria-hidden="true">
         {{ service.icon }}
       </div>
-      <span class="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-pine-900 backdrop-blur">
-        {{ service.icon }} บริการยอดนิยม
+      <span class="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-white/90 px-3 py-1.5 text-xs font-bold text-pine-900 backdrop-blur">
+        <AppIcon :name="iconName" class="h-4 w-4" /> บริการยอดนิยม
       </span>
     </div>
     <div class="p-6">
@@ -30,5 +30,16 @@
 
 <script setup lang="ts">
 import type { Service } from '~/data/services'
-defineProps<{ service: Service }>()
+const props = defineProps<{ service: Service }>()
+
+/** ชุดเดียวกับ ServiceCard (แสดงผลเท่านั้น ไม่แตะข้อมูล) */
+const iconMap: Record<string, string> = {
+  'sor-por-kor-4-01': 'file-check',
+  'change-heir': 'users',
+  'land-loan': 'banknote',
+  'land-use-check': 'map-pin',
+  'land-dispute': 'shield',
+  'support-project': 'sprout'
+}
+const iconName = computed(() => iconMap[props.service.id] ?? 'leaf')
 </script>

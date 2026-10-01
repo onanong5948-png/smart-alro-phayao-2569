@@ -3,7 +3,7 @@
     <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-3">
       <div>
         <div class="flex items-center gap-3">
-          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-2xl">🌾</div>
+          <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-white"><AppIcon name="sprout" class="h-6 w-6" /></div>
           <p class="text-lg font-bold">Smart ALRO Phayao</p>
         </div>
         <p class="mt-4 text-sm leading-relaxed text-white/70">{{ siteInfo.org }}</p>
@@ -24,8 +24,8 @@
         <p class="text-sm text-white/70">{{ contactInfo.hours }}</p>
       </div>
     </div>
-    <div class="border-t border-white/10 py-5 text-center text-xs text-white/50">
-      © 2569 Smart ALRO Phayao • ต้นแบบเพื่อการออกแบบ ยังไม่ใช่ระบบให้บริการจริง
+    <div class="border-t border-white/10 py-5 text-center text-xs text-white/60">
+      © 2026 Smart ALRO Phayao · ระบบต้นแบบเพื่อการศึกษาและนำเสนอ
     </div>
   </footer>
 </template>
